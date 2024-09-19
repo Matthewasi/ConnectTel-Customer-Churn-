@@ -42,21 +42,17 @@ b) Creating New Features
 
 4. Model Selection, Training, and Validation
 a) Train and Test at least 3 supervised learning models 
-Trained and tested about 7 machine learning models including KNeigbours, RandomForest, LogisticRegression, DecisionTreen, SVC, XGB and Naive Bayes.
-from sklearn.linear_model import SGDClassifier
-from sklearn.neighbors import KNeighborsClassifier
+including RandomForest, LogisticRegression and DecisionTree
+
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC, SVC
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
-from xgboost import XGBClassifier
+
 
 5. Model Evaluation using:
-accuracy score, precision score, recall score, f1_score, roc_auc_score
+accuracy score, precision score, recall score
 from sklearn.metrics import confusion matrix
-If the ConnectTel wants to ensure that it catches as many potential churners as possible (to minimize customer loss), it should aim for higher recall, even if it means some non-churners are wrongly identified. Naive Bayes 72.92% secondly with 50.94% with 50.94% and last but not the least is DecisionTree with 50.67%. With these metrics provided the ConnectTel should focus on the false negatives to prevent customers from deactivating the services.   
+If the ConnectTel wants to ensure that it catches as many potential churners as possible (to minimize customer loss), it should aim for higher accuracy, even if it means some non-churners are wrongly identified.LogisticRegression gave as the higher accuracy level with 77.5% which means the dmachine learning is able to predict correctly 77.5% correctly the number of customers who are likely to churn fromt connecTel Products and services. 
 Most customer retention scenarios prioritize decreasing false negatives (identifying all prospective churners), as each missed churn might result in a direct loss of Revenue.
 
 
