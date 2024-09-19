@@ -23,8 +23,6 @@ It includes information about:
 •Churn: The target variable indicates whether the customer has churned (canceled the service) or not. It is the main variable to predict in telecom customer churn analysis. 
 
 
-
-
 1. Problem Definition
 The goal of this project is to predict customer churn of ConnectTel by analyzing historical customer data. By accurately predicting which customers are likely to leave, the company can take targeted actions to retain them, ultimately reducing churn rates and increasing revenue, ConnectTel will benefit by implementing strategies to retain high-value customers, reducing churn rate, optimizing marketing strategies, and improving customer satisfaction to maintain a competitive edge in the industry. 
 
@@ -40,22 +38,15 @@ a) Encoding Categorical Variables
 b) Creating New Features
 
 4. Model Selection, Training, and Validation
-a) Train and Test at least 3 supervised learning models 
-Trained and tested about 7 machine learning models including KNeigbours, RandomForest, LogisticRegression, DecisionTreen, SVC, XGB and Naive Bayes.
-from sklearn.linear_model import SGDClassifier
-from sklearn.neighbors import KNeighborsClassifier
+a) Train and Test at least 3 supervised learning models :
+including KNeigbours, RandomForest, LogisticRegression, DecisionTreen
+
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC, SVC
-from sklearn.naive_bayes import GaussianNB
-from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
-from xgboost import XGBClassifier
 
 5. Model Evaluation using:
-accuracy score, precision score, recall score, f1_score, roc_auc_score
-from sklearn.metrics import confusion matrix
-If the ConnectTel wants to ensure that it catches as many potential churners as possible (to minimize customer loss), it should aim for higher recall, even if it means some non-churners are wrongly identified. Naive Bayes 72.92% secondly with 50.94% with 50.94% and last but not the least is DecisionTree with 50.67%. With these metrics provided the ConnectTel should focus on the false negatives to prevent customers from deactivating the services.   
-Most customer retention scenarios prioritize decreasing false negatives (identifying all prospective churners), as each missed churn might result in a direct loss of Revenue.
+accuracy score, precision score, recall score, 
+
 
 
